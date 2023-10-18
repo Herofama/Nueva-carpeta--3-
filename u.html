@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="e.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cont">
+        <h1>Formulario de inscripción</h1>
+        <form>
+            <div class="form-group">
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" maxlength="10">
+            </div>
+
+            <div class="form-group">
+                <label for="texto1">Texto 1 (máximo 40 caracteres):</label>
+                <input type="text" id="texto1" maxlength="40">
+            </div>
+
+            <div class="form-group">
+                <label for="texto2">Texto 2 (máximo 40 caracteres):</label>
+                <input type="text" id="texto2" maxlength="40">
+            </div>
+
+            <div class="form-group">
+                <label for="texto-multilinea">Texto Multilínea (máximo 200 caracteres):</label>
+                <textarea id="texto-multilinea" rows="3" maxlength="200"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+            </div>
+
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora">
+            </div>
+
+            <div class="form-group">
+                <label for="casilla">Casilla:</label>
+                <input type="checkbox" id="casilla">
+            </div>
+
+            <div class="form-group">
+                <label>Opciones (selecciona una):</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="opcion" value="opcion1"> Opción 1</label>
+                    <label><input type="radio" name="opcion" value="opcion2"> Opción 2</label>
+                    <label><input type="radio" name="opcion" value="opcion3"> Opción 3</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <input type="color" id="color" class="color-select">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="lista-desplegable">Lista desplegable:</label>
+                <select id="lista-desplegable">
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="lista-multi">Lista desplegable (múltiple selección):</label>
+                <select id="lista-multi" multiple>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="busqueda">Buscar por iniciales:</label>
+<input type="text" id="busqueda" name="busqueda" list="opciones">
+<datalist id="opciones">
+    <option value="Manzana">
+    <option value="Banana">
+    <option value="Cereza">
+    <option value="Dátil">
+    <option value="Fresa">
+    <option value="Uva">
+</datalist>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+        </div>
+    </div>
+    
+</body>
+</html>

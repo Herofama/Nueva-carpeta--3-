@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1acf42;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fffefe;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cont{
+    margin-right: 8%;
+    margin-left: 4%;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+            select {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+    
+            input[type="number"] {
+                max-width: 10em;
+            }
+    
+            textarea {
+                height: 100px;
+            }
+    
+            input[type="date"],
+            input[type="time"],
+            input[type="email"] {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+    
+            input[type="checkbox"] {
+                margin-top: 5px;
+            }
+    
+            .radio-group {
+                display: flex;
+            }
+    
+            .radio-group label {
+                margin-right: 10px;
+            }
+    
+            .color-select {
+                width: 100px;
+            }
+    
+            .autocomplete {
+                position: relative;
+            }
+    
+            .autocomplete input {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .autocomplete .autocomplete-dropdown {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 100;
+                width: 100%;
+                max-height: 100px;
+                overflow-y: auto;
+                background: #fff;
+                border: 1px solid #ccc;
+                border-top: none;
+                display: none;
+            }
+    
+            .autocomplete .autocomplete-item {
+                padding: 5px;
+                cursor: pointer;
+            }
+    
+            .autocomplete .autocomplete-item:hover {
+                background: #f2f2f2;
+            }
